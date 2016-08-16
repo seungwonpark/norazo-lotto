@@ -1,4 +1,3 @@
-for i in {639..715};
-do
+for ((i=639;i<=715;i++)); do
     python getnumber.py $i
 done
