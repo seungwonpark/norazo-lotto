@@ -114,5 +114,10 @@ td, th {
 			}
 		?>
 	</table>
+	
+	
+	<div align="center">
+		<img src="nipalzaya.png" width="80%">
+	</div>
 </body>
 </html>
