@@ -44,7 +44,7 @@ td, th {
 			$boolarray = Array(false => 'false', true => 'true'); // Temporary tool for development
 			
 			echo "\r\n";
-			for($lottoNo = 714; $lottoNo < 716; $lottoNo++){ // since 639
+			for($lottoNo = 639; $lottoNo < 716; $lottoNo++){ // since 639
 				echo "\t\t" . '<tr>' . "\r\n";
 				echo "\t\t\t" . '<td>' . $lottoNo . '</td>' . "\r\n";
 				$file = fopen("data/" . $lottoNo . ".csv", "r");
@@ -61,7 +61,7 @@ td, th {
 					}
 					if($isCorrect[$i] == true){
 						echo "\t\t\t" . '<th>' . $data[$i] . '</th>' . "\r\n";
-						$correct += 1;
+						$correct++;
 					}
 					else{
 						echo "\t\t\t" . '<td>' . $data[$i] . '</td>' . "\r\n";
