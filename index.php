@@ -39,9 +39,7 @@ td, th {
 			<td colspan="3"></td>
 		</tr>
 		<?php
-			//$nipalzaya = array(0, 5, 9, 15, 22, 26, 43);
-			$nipalzaya = array(0, 2, 7, 10, 27, 41, 44);
-			// 715 : , 2, 7, 27, 33, 41, 44, 10
+			$nipalzaya = array(0, 5, 9, 15, 22, 26, 43);
 			
 			$boolarray = Array(false => 'false', true => 'true'); // Temporary tool for development
 			
