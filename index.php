@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Norazo manse</title>
+<title>노라조 복권에측 성적표</title>
 <style>
 table {
     font-family: arial, sans-serif;
@@ -22,9 +22,47 @@ th {
     padding: 8px;
 	color: red;
 }
+
+h1 {
+	font-size: 5.0vw;
+	margin: 0px;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 1.5vw;
+	margin: 0px;
+}
+a {
+	color: blue;
+	text-decoration: none;
+}
 </style>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 </head>
 <body>
+	<div align="center">
+		<h1> <b>노라조 복권예측 성적표</b> </font> </h1>
+		<h3> <s> 매주 복권 발표날짜에 자동 갱신됩니다.(미완성) </s> </h3>
+	</div>
+	<div align="right">
+		<a href="https://github.com/seungwonpark/norazo-lotto" target="_blank">This project on GitHub</a>
+	</div>
 	<table>
 		<tr>
 			<th><font color="black">회차</font></th>
@@ -121,10 +159,16 @@ th {
 			}
 		?>
 	</table>
-	
+	<br>
 	
 	<div align="center">
+		<a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
+		<br>
+		<br>
+		<br>
 		<img src="nipalzaya.png" width="80%">
+		<br>
+		<h3>위 MV 캡처이미지의 저작권은 노라조에게 있습니다. <a href="https://www.youtube.com/watch?v=s0UjELAUMjE">니팔자야 MV 링크</a> </h3>
 	</div>
 </body>
 </html>
