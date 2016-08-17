@@ -3,25 +3,24 @@
 
 num = [0]
 import urllib2
-#from sys import argv
-#script, lottoNo = argv
-#from time import sleep
-for lottoNo in range(639, 716):
-    response = urllib2.urlopen('http://nlotto.co.kr/lotto645Confirm.do?method=byWin&drwNo=' + str(lottoNo))
+from sys import argv
+script, lottoNo = argv
 
-    html = response.read()
-    html_win = html.split('<div class="lotto_win_number mt12">')[1]
-    html_win = html_win.split('</div>')[0]
-    html_win_core = html_win.split('ball_')
+response = urllib2.urlopen('http://nlotto.co.kr/lotto645Confirm.do?method=byWin&drwNo=' + str(lottoNo))
 
-    html_date = html.split(')</span></h3>')[0];
-    html_date = html_date.split('/> <span>(')[1];
+html = response.read()
+html_win = html.split('<div class="lotto_win_number mt12">')[1]
+html_win = html_win.split('</div>')[0]
+html_win_core = html_win.split('ball_')
 
-    f = open('data/' + str(lottoNo) + '.csv', 'a')
+html_date = html.split(')</span></h3>')[0];
+html_date = html_date.split('/> <span>(')[1];
 
-    f.write(html_date);
-    #print (html_date);
+f = open('data/' + str(lottoNo) + '.csv', 'w')
 
-    for i in range(1,8):
-        num.append(html_win_core[i].split('.png')[0])
-        f.write(',' + num[i])
+f.write(html_date);
+#print (html_date);
+
+for i in range(1,8):
+    num.append(html_win_core[i].split('.png')[0])
+    f.write(',' + num[i])
