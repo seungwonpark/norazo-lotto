@@ -10,22 +10,29 @@ table {
     width: 100%;
 }
 
-td, th {
+td {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
+}
+
+th {
+	border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+	color: red;
 }
 </style>
 </head>
 <body>
 	<table>
 		<tr>
-			<th>회차</th>
-			<th>날짜</th>
-			<th colspan="6">번호</th>
-			<th>보너스</th>
-			<th>맞은 개수</th>
-			<th>비고</th>
+			<th><font color="black">회차</font></th>
+			<th><font color="black">날짜</font></th>
+			<th colspan="6"><font color="black">번호</font></th>
+			<th><font color="black">보너스</font></th>
+			<th><font color="black">맞은 개수</font></th>
+			<th><font color="black">비고</font></th>
 		</tr>
 		<tr>
 			<td><i>MV</i></td>
