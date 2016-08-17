@@ -58,7 +58,7 @@ a {
 <body>
 	<div align="center">
 		<h1> <b>노라조 복권예측 성적표</b> </font> </h1>
-		<h3> <s> 매주 복권 발표날짜에 자동 갱신됩니다.(미완성) </s> </h3>
+		<h3> 매주 복권 발표날짜(토 23:59)에 자동 갱신됩니다. </h3>
 	</div>
 	<div align="right">
 		<a href="https://github.com/seungwonpark/norazo-lotto" target="_blank">This project on GitHub</a>
@@ -88,8 +88,10 @@ a {
 			
 			$boolarray = Array(false => 'false', true => 'true'); // Temporary tool for development
 			
+			$most_recent = file_get_contents('data/mostrecent.txt');
+			
 			echo "\r\n";
-			for($lottoNo = 639; $lottoNo < 716; $lottoNo++){ // since 639
+			for($lottoNo = 639; $lottoNo <= $most_recent; $lottoNo++){ // since 639
 				echo "\t\t" . '<tr>' . "\r\n";
 				echo "\t\t\t" . '<td>' . $lottoNo . '</td>' . "\r\n";
 				$file = fopen("data/" . $lottoNo . ".csv", "r");

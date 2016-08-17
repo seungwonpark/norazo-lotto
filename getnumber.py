@@ -28,6 +28,8 @@ if(int(lottoNo) == 0):
     html_lottoNo = html_lottoNo.split('" /> <strong>')[1]
     html_lottoNo = html_lottoNo.split('</strong>')[0]
     lottoNo = html_lottoNo
+    f_mostrecent = open('data/mostrecent.txt', 'w')
+    f_mostrecent.write(lottoNo)
 
 f = open('data/' + str(lottoNo) + '.csv', 'w')
 
