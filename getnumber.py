@@ -16,6 +16,9 @@ html_win_core = html_win.split('ball_')
 html_date = html.split(')</span></h3>')[0]
 html_date = html_date.split('/> <span>(')[1]
 html_date = html_date.split(' 추첨')[0]
+html_date = html_date.replace('년 ','-')
+html_date = html_date.replace('월 ','-')
+html_date = html_date.replace('일','')
 
 f = open('data/' + str(lottoNo) + '.csv', 'w')
 
