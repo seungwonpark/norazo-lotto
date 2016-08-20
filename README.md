@@ -6,6 +6,10 @@
 ## Settings
 Make 'data' folder. `mkdir data`
 
-Execute crontab to execute `update.sh` every Saturday. `sudo crontab -e`
+Execute crontab to execute `update.sh` every Saturday. 
 
-Then add following `59 23 * * 6 /var/www/html/norazo-lotto/update.sh`
+`sudo crontab -e`
+
+Then add following 
+
+`00 21 * * 6 /var/www/html/norazo-lotto/update.sh`
