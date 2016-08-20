@@ -1,12 +1,12 @@
 # norazo-lotto
-니팔자야에 나온 로또번호 비교(Currently Alpha)
+노라조가 [니팔자야 MV](https://www.youtube.com/watch?v=s0UjELAUMjE)(2015.02.22)에서 추천한 복권번호 비교
 
 [Demo](http://swpark.ddns.net/norazo-lotto)
 
 ## Settings
 Make 'data' folder. `mkdir data`
 
-Execute crontab to execute `update.sh` every Saturday. 
+Configure crontab to execute `update.sh` every Saturday 21:00. 
 
 `sudo crontab -e`
 
