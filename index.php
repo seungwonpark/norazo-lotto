@@ -78,12 +78,12 @@ a {
 		<tr>
 			<td><i>MV</i></td>
 			<td>2015-02-22</td>
-			<td>5</td>
-			<td>9</td>
-			<td>15</td>
-			<td>22</td>
-			<td>26</td>
-			<td>43</td>
+			<td><i>5</i></td>
+			<td><i>9</i></td>
+			<td><i>15</i></td>
+			<td><i>22</i></td>
+			<td><i>26</i></td>
+			<td><i>43</i></td>
 			<td colspan="3"></td>
 		</tr>
 		<?php
