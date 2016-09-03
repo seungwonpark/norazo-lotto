@@ -2,7 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>노라조 복권에측 성적표</title>
+<meta name="description" content="노라조 로또 성적표">
+<meta name="keywords" content="노라조,로또,복권,운수,사주,팔자,예측,점지,추천,번호,추천번호,대박">
+<meta name="author" content="seungwonpark">
+<title>노라조 로또 성적표</title>
 <style>
 table {
     font-family: arial, sans-serif;
@@ -57,8 +60,8 @@ a {
 </head>
 <body>
 	<div align="center">
-		<h1> <b>노라조 복권예측 성적표</b> </font> </h1>
-		<h3> 매주 복권 발표날짜(토 21:00)에 자동 갱신됩니다. </h3>
+		<h1> <b>노라조 로또 성적표</b> </font> </h1>
+		<h3> 매주 로또 발표날짜(토 21:00)에 자동 갱신됩니다. </h3>
 	</div>
 	<div align="right">
 		<a href="https://github.com/seungwonpark/norazo-lotto" target="_blank">This project on GitHub</a>
