@@ -7,9 +7,9 @@ from sys import argv
 script, lottoNo = argv
 
 if(int(lottoNo) == 0):
-    response = urllib2.urlopen('http://nlotto.co.kr/lotto645Confirm.do?method=byWin')
+    response = urllib2.urlopen('http://nlotto.co.kr/gameResult.do?method=byWin')
 else:
-    response = urllib2.urlopen('http://nlotto.co.kr/lotto645Confirm.do?method=byWin&drwNo=' + str(lottoNo))
+    response = urllib2.urlopen('http://nlotto.co.kr/gameResult.do?method=byWin&drwNo=' + str(lottoNo))
 
 html = unicode(response.read(), "euc-kr").encode("utf-8")
 html_win = html.split('<div class="lotto_win_number mt12">')[1]
