@@ -176,4 +176,14 @@ a {
 		<h3>위 MV 캡처이미지의 저작권은 노라조에게 있습니다. <a href="https://www.youtube.com/watch?v=s0UjELAUMjE">니팔자야 MV 링크</a> </h3>
 	</div>
 </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101585306-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>
