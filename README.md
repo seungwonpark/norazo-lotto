@@ -5,13 +5,10 @@
 
 [Demo](http://swpark.ddns.net/norazo-lotto)
 
-## Settings
-Make 'data' folder. `mkdir data`
-
-Configure crontab to execute `update.sh` every Saturday 21:00. 
-
-`sudo crontab -e`
-
-Then add following 
-
-`00 21 * * 6 /var/www/html/norazo-lotto/update.sh`
+## How to setup
+```bash
+mkdir data # make 'data' folder.
+python3 initialize.py
+sudo crontab -e # configure crontab to execute `update.sh` every Saturday 21:00. 
+00 21 * * 6 /var/www/html/norazo-lotto/update.sh
+```
