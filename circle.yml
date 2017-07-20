@@ -4,5 +4,4 @@ machine:
 test:
   post:
     - mkdir data
-    - python initialize.py
     - python update.py
