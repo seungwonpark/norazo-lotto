@@ -1,17 +1,16 @@
-# -*- coding: utf-8 -*-
-# Based on python2
+# Based on python3
 
 num = [0]
-import urllib2
 from sys import argv
 script, lottoNo = argv
 
-if(int(lottoNo) == 0):
-    response = urllib2.urlopen('http://nlotto.co.kr/gameResult.do?method=byWin')
-else:
-    response = urllib2.urlopen('http://nlotto.co.kr/gameResult.do?method=byWin&drwNo=' + str(lottoNo))
+import urllib.request
+url = 'http://nlotto.co.kr/gameResult.do?method=byWin'
+if(int(lottoNo) != 0):
+	url = url + '&drwNo=' + str(lottoNo)
 
-html = unicode(response.read(), "euc-kr").encode("utf-8")
+with urllib.request.urlopen(url) as response:
+	html = str(response.read(), "euc-kr")
 
 html_date = html.split('<img src="/img/contents/result/wininfo/txt_lotto_num02.gif"  alt="제" />')[1]
 html_date = html_date.split(' 추첨)')[0]
@@ -27,14 +26,13 @@ html_win_core = html_win_core.replace('+',',')
 num = html_win_core.split(',')
 
 if(int(lottoNo) == 0):
-    lottoNo = html_win.split('회')[0]
-    f_mostrecent = open('data/mostrecent.txt', 'w')
-    f_mostrecent.write(lottoNo)
+	lottoNo = html_win.split('회')[0]
+	f_mostrecent = open('data/mostrecent.txt', 'w')
+	f_mostrecent.write(lottoNo)
 
 f = open('data/' + str(lottoNo) + '.csv', 'w')
 
 f.write(html_date)
-#print (html_date)
 
 for i in range(0,7):
-    f.write(',' + num[i])
+	f.write(',' + num[i])
