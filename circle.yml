@@ -1,7 +1,8 @@
 machine:
   python:
-    version: 2.7.5
+    version: 3.6.0
 test:
   post:
     - mkdir data
-    - python getnumber.py 0
+    - python initialize.py
+    - python update.py
