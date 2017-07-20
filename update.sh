@@ -1,1 +1,1 @@
-python getnumber.py 0
+python3 update.py
